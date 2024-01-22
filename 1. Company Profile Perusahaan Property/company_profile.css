@@ -1,0 +1,157 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+section#beranda {
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+}
+section {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+/* Navbar */
+nav.navbar {
+  z-index: 99999;
+  overflow-y: hidden;
+}
+button.nav-btn:hover,
+button.nav-btn:active {
+  color: #0d6efd;
+}
+ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: #fff;
+}
+div.form-check label.label-remember-me {
+  font-size: 0.9rem;
+}
+form.d-grid div.line-or {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+form.d-grid div.line-or::before {
+  content: "Or";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e2e3e5;
+  color: #000;
+  padding: 0 0.6rem;
+}
+/*  */
+
+/* Section Fitur */
+section.bg-img {
+  background-image: url(./Assets/image-fitur.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4.5rem;
+  position: relative;
+}
+section.bg-img div.overlay {
+  background-color: #00000059;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.input-group input[type="text"]::placeholder {
+  color: #0d6efd;
+}
+.input-group input[type="text"]:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+ul.nav-tabs {
+  border: none;
+  border-radius: 0px;
+}
+.nav-tabs .nav-item .nav-link {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0;
+  border: none;
+  color: #0d6efd;
+}
+/*  */
+
+/* Section Kontak */
+section#kontak {
+  background-image: url(./Assets/img-kontak.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+section#kontak div.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 100vh;
+}
+#kontak h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+section#kontak form .form-kontak input:focus {
+  border: 1px solid #5b5959;
+  outline: none;
+  box-shadow: none;
+}
+section#kontak form .form-kontak label {
+  color: #717171;
+}
+footer {
+  width: 100%;
+  height: 10rem;
+  background-color: #000;
+}
+
+@media screen and (max-width: 562px) {
+  section#beranda .img-fluid {
+    opacity: 0.5;
+  }
+  #fitur .tab-content .input-group .dropdown-toggle {
+    font-size: 1rem;
+    width: 50%;
+  }
+  #fitur .tipe-responsif {
+    border-radius: 0;
+  }
+  #fitur .range-responsif {
+    border-radius: 0 8px 0 0;
+  }
+  #fitur .btn-primary {
+    border-radius: 0 0 8px 0;
+  }
+  #fitur input[type="text"] {
+    border-radius: 0 0 0 8px;
+  }
+  #kontak h2 {
+    width: 100%;
+    font-size: 2.2rem;
+  }
+  .container-fluid .copyright {
+    font-size: 0.8rem;
+  }
+}

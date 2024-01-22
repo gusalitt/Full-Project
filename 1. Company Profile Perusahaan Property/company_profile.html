@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rumah Idaman</title>
+  <link rel="stylesheet" href="company_profile.css">
+  <link rel="icon" href="Assets/favicon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container my-auto">
+      <a class="navbar-brand fw-bold ms-2 ms-md-0" href="#">
+        <img src="Assets/favicon.png" alt="Logo" width="30" class="d-inline-block align-content-center me-2">Rumah
+        Idaman</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarnav" aria-controls="navbarnav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse z-3" id="navbarnav">
+        <ul class="navbar-nav mx-auto fw-medium">
+          <li class="nav-item">
+            <a class="nav-link" href="#beranda">BERANDA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#layanan">LAYANAN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fitur">FITUR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">KONTAK</a>
+          </li>
+        </ul>
+
+        <div class="d-grid d-lg-inline">
+          <button type="button" class="nav-btn btn btn-outline-light fw-medium mb-2 mb-lg-0 px-4 fs-5"
+            data-bs-toggle="modal" data-bs-target="#modal-1">Login</button>
+          <button type="button" class="nav-btn btn btn-light fw-medium text-primary px-4 fs-5 mb-2 mb-md-0"
+            data-bs-toggle="modal" data-bs-target="#modal-2">Sign Up</button>
+
+          <div class="modal fade px-4" data-bs-backdrop="static" id="modal-2">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header p-2">
+                  <h4 class="modal-title mx-auto fw-semibold my-auto">SIGN UP</h4>
+                  <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-secondary-subtle rounded-bottom-3">
+                  <form action="" class="d-grid">
+                    <div class="input-group mb-3 mt-2">
+                      <div class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                          fill="currentColor" class="bi bi-person-fill p-0" viewBox="0 0 16 16">
+                          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg></div>
+                      <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                    </div>
+
+                    <div class="input-group mb-3">
+                      <div class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                          fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+                          <path
+                            d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588M5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z" />
+                          <path
+                            d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z" />
+                        </svg></div>
+                      <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                    </div>
+
+                    <div class="input-group mb-2">
+                      <div class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                          fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+                          <path
+                            d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588M5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z" />
+                          <path
+                            d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z" />
+                        </svg></div>
+                      <input type="password" name="password" id="password" class="form-control"
+                        placeholder="Confirm Password">
+                    </div>
+                    <div class="form-check mb-3 ms-1">
+                      <input type="checkbox" class="form-check-input" name="check" id="check">
+                      <label for="check" class="label-remember-me form-check-label">Remember Me</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary fw-semibold mb-2 fs-4 py-1">Sign Up</button>
+                    <p class="text-center fs-6">Already have an account? <a href="#modal-1" data-bs-toggle="modal"
+                        class="text-decoration-none">Login</a></p>
+                    <div class="line-or mt-3"></div>
+
+                    <button type="submit" class="btn btn-outline-warning mt-4"><img src="Assets/logo-google.png"
+                        alt="Google" width="25" class="me-1"> Sign Up with Google</button>
+                    <button type="submit" class="btn btn-outline-primary mt-2"><img src="Assets/logo-facecook.webp"
+                        alt="Facebook" width="25" class="me-1"> Sign Up with Facebook</button>
+                    <button type="submit" class="btn btn-outline-danger mt-2"><img src="Assets/logo-instagram.png"
+                        alt="Instagram" width="25" class="me-1"> Sign Up with Instagram</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade px-4" data-bs-backdrop="static" id="modal-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header p-2">
+                  <h4 class="modal-title mx-auto fw-semibold my-auto">LOGIN</h4>
+                  <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-secondary-subtle rounded-bottom-3">
+                  <form action="" class="d-grid">
+                    <div class="input-group mb-3 mt-2">
+                      <div class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                          fill="currentColor" class="bi bi-person-fill p-0" viewBox="0 0 16 16">
+                          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg></div>
+                      <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                    </div>
+
+                    <div class="input-group mb-2">
+                      <div class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                          fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+                          <path
+                            d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588M5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z" />
+                          <path
+                            d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z" />
+                        </svg></div>
+                      <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                    </div>
+                    <a href="#" class="text-center text-decoration-none mb-3">Forgot Password ?</a>
+                    <button type="submit" class="btn btn-primary fw-bold mb-2 fs-4 py-1">Login</button>
+                    <p class="text-center">Don't have an account? <a href="#modal-2" data-bs-toggle="modal"
+                        class="text-decoration-none">Sign Up</a></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Beranda Section -->
+  <section id="beranda" class="text-bg-primary">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-md-7 z-3 my-auto ms-2 ms-md-0">
+          <h1 style="font-size: 2.8rem;" class="fw-semibold">Membantu Temukan Rumah Idaman.</h1>
+          <p style="width: 80%;"><span class="fw-bold">Rumah Idaman </span>Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Repellat veritatis aut ex. Voluptatum a iure voluptatem ea necessitatibus molestiae ipsam
+            dolor.</p>
+          <button type="button" class="btn btn-light text-primary fw-medium py-2 px-4 fs-5">Temukan Rumah</button>
+          <a href="#"><img src="./Assets/arrow.png" alt="Arrow-Right"></a>
+        </div>
+      </div>
+      <img src="./Assets/home-img.png" alt="Beranda Img" class="h-100 position-absolute bottom-0 end-0 img-fluid">
+      <img src="./Assets/accsent1.png" alt="Accsent" class="h-100 position-absolute top-0 start-0">
+    </div>
+  </section>
+
+  <!-- Layanan Section -->
+  <section id="layanan" style="padding-top: 4.5rem;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="text-primary mb-1">Layanan Kami</h1>
+          <p style="margin-bottom: 2.3rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veritatis
+            dignissimos laboriosam.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center text-bg-primary rounded-3 p-2 mb-4 mx-md-0 mx-3"
+            style="box-shadow: 0 0 .6rem #000;">
+            <div class="bg-light rounded-circle mx-auto mt-3 position-relative" style="width: 80px; height: 80px;"><img
+                src="./Assets/house 1.png" alt="" width="60" class="position-absolute top-50 start-50 translate-middle">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title fs-3 fw-semibold" style="margin-bottom: 1.1rem;">Property Baru</h3>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam sed laudantium
+                iure!</p>
+              <a href="#" class="btn btn-light ps-4 py-2 fs-6 text-primary">Baca Selengkapnya... <svg
+                  xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="currentColor"
+                  class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center text-bg-primary rounded-3 p-2 mb-4 mx-md-0 mx-3"
+            style="box-shadow: 0 0 .7rem #000;">
+            <div class="bg-light rounded-circle mx-auto mt-3 position-relative" style="width: 80px; height: 80px;"><img
+                src="./Assets/sewa 1.png" alt="" width="60" class="position-absolute top-50 start-50 translate-middle">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title fs-3 fw-semibold" style="margin-bottom: 1.1rem;">Sewa Rumah</h3>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam autem laboriosam
+                ipsa..</p>
+              <a href="#" class="btn btn-light ps-4 py-2 fs-6 text-primary">Baca Selengkapnya... <svg
+                  xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="currentColor"
+                  class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center text-bg-primary rounded-3 p-2 mb-4 mx-md-0 mx-3"
+            style="box-shadow: 0 0 .7rem #000;">
+            <div class="bg-light rounded-circle mx-auto mt-3 position-relative" style="width: 80px; height: 80px;"><img
+                src="./Assets/town 1.png" alt="" width="60" class="position-absolute top-50 start-50 translate-middle">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title fs-3 fw-semibold" style="margin-bottom: 1.1rem;">Beli Rumah</h3>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem doloribus molestias
+                non?</p>
+              <a href="#" class="btn btn-light ps-4 py-2 fs-6 text-primary">Baca Selengkapnya... <svg
+                  xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="currentColor"
+                  class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Fitur Section -->
+  <section id="fitur">
+    <section class="bg-img">
+      <div class="overlay d-flex align-items-center pb-5">
+        <div class="container mx-auto">
+          <div class="row">
+            <div class="col-md-12 text-center text-white">
+              <h1>Temukan Rumah Idamanmu</h1>
+              <p>Sekarang Anda dapat menghemat semua hal stres, waktu, dan biaya tersembunyi, dengan ratusan rumah untuk
+                anda</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-10 mx-auto mt-2">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#jual" style="border-radius: 8px 0 0 0;">Jual</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#sewa">Sewa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#propertybaru"
+                    style="border-radius: 0 8px 0 0;">Property Baru</a>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div id="jual" class="container tab-pane px-0 active fade show">
+
+                  <div class="input-group input-group-lg" style="height: 70px;">
+                    <button class="btn btn-light dropdown-toggle text-primary rounded-top-0 tipe-responsif"
+                      type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="./Assets/icon-rumah.png"
+                        alt="" class="mb-1 me-1"> Tipe Rumah</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Tipe Rumah</a></li>
+                      <li><a class="dropdown-item" href="#">Tipe Rumah</a></li>
+                      <li><a class="dropdown-item" href="#">Tipe Rumah</a></li>
+                      <li><a class="dropdown-item" href="#">Tipe Rumah</a></li>
+                    </ul>
+                    <button class="btn btn-light dropdown-toggle text-primary range-responsif" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false"><img src="./Assets/icon-rharga.png" alt=""
+                        class="mb-1 me-1"> Range Harga</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Range Harga</a></li>
+                      <li><a class="dropdown-item" href="#">Range Harga</a></li>
+                      <li><a class="dropdown-item" href="#">Range Harga</a></li>
+                      <li><a class="dropdown-item" href="#">Range Harga</a></li>
+                    </ul>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                      placeholder="Cari berdasarkan lokasi, ID, property">
+                    <button type="button" class="btn btn-primary fs-4 ">Cari</button>
+                  </div>
+
+                </div>
+                <div id="sewa" class="container tab-pane fade px-0 ">
+
+                  <div class="input-group input-group-lg" style="height: 70px;">
+                    <button class="btn btn-light dropdown-toggle text-primary rounded-top-0 tipe-responsif"
+                      type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="./Assets/icon-rumah.png"
+                        alt="" class="mb-1 me-1"> Waktu Sewa</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Jenis Sewa</a></li>
+                      <li><a class="dropdown-item" href="#">Jenis Sewa</a></li>
+                      <li><a class="dropdown-item" href="#">Jenis Sewa</a></li>
+                      <li><a class="dropdown-item" href="#">Jenis Sewa</a></li>
+                    </ul>
+                    <button class="btn btn-light dropdown-toggle text-primary range-responsif" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false"><img src="./Assets/icon-rharga.png" alt=""
+                        class="mb-1 me-1"> Range
+                      Harga</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Range Harga</a></li>
+                      <li><a class="dropdown-item" href="#">Range Harga</a></li>
+                      <li><a class="dropdown-item" href="#">Range Harga</a></li>
+                      <li><a class="dropdown-item" href="#">Range Harga</a></li>
+                    </ul>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                      placeholder="Cari berdasarkan lokasi, ID, property">
+                    <button type="button" class="btn btn-primary fs-4">Cari</button>
+                  </div>
+
+                </div>
+                <div id="propertybaru" class="container tab-pane fade px-0">
+
+                  <div class="input-group input-group-lg" style="height: 70px;">
+                    <button class="btn btn-light dropdown-toggle text-primary rounded-top-0 tipe-responsif"
+                      type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="./Assets/icon-rumah.png"
+                        alt="" class="mb-1 me-1"> Jenis Property</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Jenis Property</a></li>
+                      <li><a class="dropdown-item" href="#">Jenis Property</a></li>
+                      <li><a class="dropdown-item" href="#">Jenis Property</a></li>
+                      <li><a class="dropdown-item" href="#">Jenis Property</a></li>
+                    </ul>
+                    <button class="btn btn-light dropdown-toggle text-primary range-responsif" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false"><img src="./Assets/icon-rharga.png" alt=""
+                        class="mb-1 me-1"> Range
+                      Harga</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Range Harga</a></li>
+                      <li><a class="dropdown-item" href="#">Range Harga</a></li>
+                      <li><a class="dropdown-item" href="#">Range Harga</a></li>
+                      <li><a class="dropdown-item" href="#">Range Harga</a></li>
+                    </ul>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                      placeholder="Cari berdasarkan lokasi, ID, property">
+                    <button type="button" class="btn btn-primary fs-4 ">Cari</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Rekomendasi -->
+    <div style="padding: 3rem 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center text-primary">
+            <h1>Rekomendasi Rumah Untuk Mu</h1>
+          </div>
+        </div>
+        <div class="row d-flex flex-wrap align-items-center">
+          <!-- #1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card mt-4 text-bg-primary p-0 mx-3 mx-md-0" style="box-shadow: 0 0 .4rem #000;">
+              <img src="Assets/img-1.png" alt="">
+              <div class="card-body" style="padding: .5rem .6rem 0;">
+                <h4 class="my-0">IDR.200.000.000</h4>
+                <p class="mb-0">Jl. Soekarno Hatta No.1</p>
+                <p class="text-warning mt-0 mb-4">Sewa</p>
+              </div>
+              <div class="card-footer text-bg-light d-flex justify-content-between align-items-center w-100">
+                <div class="fw-bold">
+                  <img src="Assets/Bed.png" alt="" class="mb-1"> 5
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Tidur</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Bath.png" alt="" class="mb-1"> 4
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Mandi</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Globe.png" alt="" class="mb-1"> 360m
+                  <p class="fw-normal" style="margin-bottom: 0;">Luas Rumah</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card mt-4 text-bg-primary p-0 mx-3 mx-md-0" style="box-shadow: 0 0 .4rem #000;">
+              <img src="Assets/img-2.png" alt="">
+              <div class="card-body" style="padding: .5rem .6rem 0;">
+                <h4 class="my-0">IDR.200.000.000</h4>
+                <p class="mb-0">Jl. Soekarno Hatta No.1</p>
+                <p class="text-dark mt-0 mb-4">Property Baru</p>
+              </div>
+              <div class="card-footer text-bg-light d-flex justify-content-between align-items-center w-100">
+                <div class="fw-bold">
+                  <img src="Assets/Bed.png" alt="" class="mb-1"> 5
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Tidur</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Bath.png" alt="" class="mb-1"> 4
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Mandi</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Globe.png" alt="" class="mb-1"> 360m
+                  <p class="fw-normal" style="margin-bottom: 0;">Luas Rumah</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card mt-4 text-bg-primary p-0 mx-3 mx-md-0" style="box-shadow: 0 0 .4rem #000;">
+              <img src="Assets/img-1.png" alt="">
+              <div class="card-body" style="padding: .5rem .6rem 0;">
+                <h4 class="my-0">IDR.200.000.000</h4>
+                <p class="mb-0">Jl. Soekarno Hatta No.1</p>
+                <p class="text-warning mt-0 mb-4">Sewa</p>
+              </div>
+              <div class="card-footer text-bg-light d-flex justify-content-between align-items-center w-100">
+                <div class="fw-bold">
+                  <img src="Assets/Bed.png" alt="" class="mb-1"> 5
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Tidur</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Bath.png" alt="" class="mb-1"> 4
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Mandi</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Globe.png" alt="" class="mb-1"> 360m
+                  <p class="fw-normal" style="margin-bottom: 0;">Luas Rumah</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #4 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card mt-4 text-bg-primary p-0 mx-3 mx-md-0" style="box-shadow: 0 0 .4rem #000;">
+              <img src="Assets/img-2.png" alt="">
+              <div class="card-body" style="padding: .5rem .6rem 0;">
+                <h4 class="my-0">IDR.200.000.000</h4>
+                <p class="mb-0">Jl. Soekarno Hatta No.1</p>
+                <p class="text-dark mt-0 mb-4">Property Baru</p>
+              </div>
+              <div class="card-footer text-bg-light d-flex justify-content-between align-items-center w-100">
+                <div class="fw-bold">
+                  <img src="Assets/Bed.png" alt="" class="mb-1"> 5
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Tidur</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Bath.png" alt="" class="mb-1"> 4
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Mandi</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Globe.png" alt="" class="mb-1"> 360m
+                  <p class="fw-normal" style="margin-bottom: 0;">Luas Rumah</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #5 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card mt-4 text-bg-primary p-0 mx-3 mx-md-0" style="box-shadow: 0 0 .4rem #000;">
+              <img src="Assets/img-1.png" alt="">
+              <div class="card-body" style="padding: .5rem .6rem 0;">
+                <h4 class="my-0">IDR.200.000.000</h4>
+                <p class="mb-0">Jl. Soekarno Hatta No.1</p>
+                <p class="text-warning mt-0 mb-4">Sewa</p>
+              </div>
+              <div class="card-footer text-bg-light d-flex justify-content-between align-items-center w-100">
+                <div class="fw-bold">
+                  <img src="Assets/Bed.png" alt="" class="mb-1"> 5
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Tidur</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Bath.png" alt="" class="mb-1"> 4
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Mandi</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Globe.png" alt="" class="mb-1"> 360m
+                  <p class="fw-normal" style="margin-bottom: 0;">Luas Rumah</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #6 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card mt-4 text-bg-primary p-0 mx-3 mx-md-0" style="box-shadow: 0 0 .4rem #000;">
+              <img src="Assets/img-2.png" alt="">
+              <div class="card-body" style="padding: .5rem .6rem 0;">
+                <h4 class="my-0">IDR.200.000.000</h4>
+                <p class="mb-0">Jl. Soekarno Hatta No.1</p>
+                <p class="text-dark mt-0 mb-4">Property Baru</p>
+              </div>
+              <div class="card-footer text-bg-light d-flex justify-content-between align-items-center w-100">
+                <div class="fw-bold">
+                  <img src="Assets/Bed.png" alt="" class="mb-1"> 5
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Tidur</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Bath.png" alt="" class="mb-1"> 4
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Mandi</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Globe.png" alt="" class="mb-1"> 360m
+                  <p class="fw-normal" style="margin-bottom: 0;">Luas Rumah</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #7 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card mt-4 text-bg-primary p-0 mx-3 mx-md-0" style="box-shadow: 0 0 .4rem #000;">
+              <img src="Assets/img-1.png" alt="">
+              <div class="card-body" style="padding: .5rem .6rem 0;">
+                <h4 class="my-0">IDR.200.000.000</h4>
+                <p class="mb-0">Jl. Soekarno Hatta No.1</p>
+                <p class="text-warning mt-0 mb-4">Sewa</p>
+              </div>
+              <div class="card-footer text-bg-light d-flex justify-content-between align-items-center w-100">
+                <div class="fw-bold">
+                  <img src="Assets/Bed.png" alt="" class="mb-1"> 5
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Tidur</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Bath.png" alt="" class="mb-1"> 4
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Mandi</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Globe.png" alt="" class="mb-1"> 360m
+                  <p class="fw-normal" style="margin-bottom: 0;">Luas Rumah</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #8 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card mt-4 text-bg-primary p-0 mx-3 mx-md-0" style="box-shadow: 0 0 .4rem #000;">
+              <img src="Assets/img-2.png" alt="">
+              <div class="card-body" style="padding: .5rem .6rem 0;">
+                <h4 class="my-0">IDR.200.000.000</h4>
+                <p class="mb-0">Jl. Soekarno Hatta No.1</p>
+                <p class="text-dark mt-0 mb-4">Property Baru</p>
+              </div>
+              <div class="card-footer text-bg-light d-flex justify-content-between align-items-center w-100">
+                <div class="fw-bold">
+                  <img src="Assets/Bed.png" alt="" class="mb-1"> 5
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Tidur</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Bath.png" alt="" class="mb-1"> 4
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Mandi</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Globe.png" alt="" class="mb-1"> 360m
+                  <p class="fw-normal" style="margin-bottom: 0;">Luas Rumah</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #9 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card mt-4 text-bg-primary p-0 mx-3 mx-md-0" style="box-shadow: 0 0 .4rem #000;">
+              <img src="Assets/img-1.png" alt="">
+              <div class="card-body" style="padding: .5rem .6rem 0;">
+                <h4 class="my-0">IDR.200.000.000</h4>
+                <p class="mb-0">Jl. Soekarno Hatta No.1</p>
+                <p class="text-warning mt-0 mb-4">Sewa</p>
+              </div>
+              <div class="card-footer text-bg-light d-flex justify-content-between align-items-center w-100">
+                <div class="fw-bold">
+                  <img src="Assets/Bed.png" alt="" class="mb-1"> 5
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Tidur</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Bath.png" alt="" class="mb-1"> 4
+                  <p class="fw-normal" style="margin-bottom: 0;">Kamar Mandi</p>
+                </div>
+                <div class="fw-bold">
+                  <img src="Assets/Globe.png" alt="" class="mb-1"> 360m
+                  <p class="fw-normal" style="margin-bottom: 0;">Luas Rumah</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-center" style="margin-top: 2.3rem;"><a href="#" class="text-decoration-none ">Lihat
+            Lainnya...</a></p>
+      </div>
+    </div>
+    <!-- Fitur Caraousel -->
+    <div style="padding: 1rem 0;">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 class="text-primary">Fitur Rumah</h1>
+          <button type="button" class="btn btn-primary rounded-3"
+            style="padding: .8rem .8rem .8rem 1.2rem; font-size: 1.1rem;">Lihat Semua<svg
+              xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="currentColor" class="bi bi-chevron-right"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg></button>
+        </div>
+        <div id="carousel-btn-slide" class="carousel slide mt-3" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-btn-slide" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-btn-slide" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-btn-slide" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel-btn-slide" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carousel-btn-slide" data-bs-slide-to="4"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carousel-btn-slide" data-bs-slide-to="5"
+              aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="position-relative">
+                <img src="Assets/kamar-tidur-1.webp" class="d-block w-100" alt="..." style="height: 420px;">
+                <div class="w-100 h-100 position-absolute top-0 bottom-0 end-0 start-0"
+                  style="background-color: #00000059;"></div>
+              </div>
+              <div class="carousel-caption d-block text-white">
+                <h3 class="mb-0">Kamar Tidur</h3>
+                <p class="mb-0">Rumah minimalist Type-A2</p>
+                <h4>IDR.200jt</h4>
+                <button type="button" class="btn btn-primary mb-3 px-3 mt-2 rounded-3">Lihat Rumah</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="position-relative">
+                <img src="Assets/dapur-1.jpg" class="d-block w-100" alt="..." style="height: 420px;">
+                <div class="w-100 h-100 position-absolute top-0 bottom-0 end-0 start-0"
+                  style="background-color: #00000059;"></div>
+              </div>
+              <div class="carousel-caption d-block text-white">
+                <h3 class="mb-0">Dapur</h3>
+                <p class="mb-0">Rumah minimalist Type-A2</p>
+                <h4>IDR.200jt</h4>
+                <button type="button" class="btn btn-primary mb-3 px-3 mt-2 rounded-3 ">Lihat Rumah</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="position-relative">
+                <img src="Assets/kamar-mandi.jpg" class="d-block w-100" alt="..." style="height: 420px;">
+                <div class="w-100 h-100 position-absolute top-0 bottom-0 end-0 start-0"
+                  style="background-color: #00000059;"></div>
+              </div>
+              <div class="carousel-caption d-block text-white">
+                <h3 class="mb-0">Kamar Mandi</h3>
+                <p class="mb-0">Rumah minimalist Type-A2</p>
+                <h4>IDR.200jt</h4>
+                <button type="button" class="btn btn-primary mb-3 px-3 mt-2 rounded-3">Lihat Rumah</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="position-relative">
+                <img src="Assets/ruang-tamu.jpg" class="d-block w-100" alt="..." style="height: 420px;">
+                <div class="w-100 h-100 position-absolute top-0 bottom-0 end-0 start-0"
+                  style="background-color: #00000059;"></div>
+              </div>
+              <div class="carousel-caption d-block text-white">
+                <h3 class="mb-0">Ruang Tamu</h3>
+                <p class="mb-0">Rumah minimalist Type-A2</p>
+                <h4>IDR.200jt</h4>
+                <button type="button" class="btn btn-primary mb-3 px-3 mt-2 rounded-3">Lihat Rumah</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="position-relative">
+                <img src="Assets/kamar-tidur-2.webp" class="d-block w-100" alt="..." style="height: 420px;">
+                <div class="w-100 h-100 position-absolute top-0 bottom-0 end-0 start-0"
+                  style="background-color: #00000059;"></div>
+              </div>
+              <div class="carousel-caption d-block text-white">
+                <h3 class="mb-0">Kamar Tidur</h3>
+                <p class="mb-0">Rumah minimalist Type-A2</p>
+                <h4>IDR.200jt</h4>
+                <button type="button" class="btn btn-primary mb-3 px-3 mt-2 rounded-3">Lihat Rumah</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="position-relative">
+                <img src="Assets/dapur-2.jpg" class="d-block w-100" alt="..." style="height: 420px;">
+                <div class="w-100 h-100 position-absolute top-0 bottom-0 end-0 start-0"
+                  style="background-color: #00000059;"></div>
+              </div>
+              <div class="carousel-caption d-block text-white">
+                <h3 class="mb-0">Dapur</h3>
+                <p class="mb-0">Rumah minimalist Type-A2</p>
+                <h4>IDR.200jt</h4>
+                <button type="button" class="btn btn-primary mb-3 px-3 mt-2 rounded-3">Lihat Rumah</button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-btn-slide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-btn-slide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak Section -->
+  <section id="kontak" class="position-relative mt-4 h-100">
+    <div class="overlay d-flex justify-content-center align-items-center position-relative">
+      <div class="container">
+        <div class="row mx-1 mx-md-0" style="margin-top: 4rem;">
+          <div class="col-md-5 text-white me-auto">
+            <h2 class="mb-4">Butuh Konsultasi...? Silahkan kontak kami, Kami
+              Siap Membantu !!</h2>
+            <div class="kontak">
+              <h5 style="margin-bottom: .7rem;">Kontak</h5>
+              <div class="mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-geo-alt"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+                <span class="ms-2">Jl. Tidak Tahu, No 123 Bali Indonesia</span>
+              </div>
+              <div class="mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                  class="bi bi-telephone-plus" viewBox="0 0 16 16">
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                  <path fill-rule="evenodd"
+                    d="M12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5" />
+                </svg>
+                <span class="ms-2">081-123-345-678</span>
+              </div>
+              <div class="mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                  class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                </svg>
+                <span class="ms-2">rumahidaman&commat;gmail.com</span>
+              </div>
+            </div>
+
+            <div class="social-media">
+              <h5 style="margin: 1.8rem 0 .7rem;">Sosial Media</h5>
+              <div>
+                <a href="#" class="text-decoration-none text-white me-2">
+                  <img src="Assets/facebook.png" alt="Facebook" width="23.33" class="rounded-3">
+                </a>
+                <a href="#" class="text-decoration-none text-white me-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path
+                      d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+                  </svg>
+                </a>
+                <a href="#" class="text-decoration-none text-white me-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor"
+                    class="bi bi-tiktok" viewBox="0 0 16 16">
+                    <path
+                      d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                  </svg>
+                </a>
+                <a href="#" class="text-decoration-none text-white me-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor"
+                    class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                  </svg>
+                </a>
+                <a href="#" class="text-decoration-none text-white me-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-threads" viewBox="0 0 16 16">
+                    <path
+                      d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948.591.621.928 1.509 1.005 2.644.328.138.63.299.905.484 1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.217 6.217 0 0 0-1.528-.161" />
+                  </svg>
+                </a>
+                <span>Rumah Idaman</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 pb-3 ms-auto" style="margin-top: 1.6rem;">
+            <div class="form bg-light rounded-3 p-2 mb-4 mx-auto mt-0 mt-md-3">
+              <h2 class="text-primary text-center pt-4">Ada Pertanyaan..?</h2>
+              <form action="/action_page.php">
+                <div class="container">
+                  <div class="form-kontak form-floating my-3">
+                    <input type="email" name="email" id="email" class="form-control"
+                      placeholder="Masukan email anda disini..." style="background-color: #C4C4C4; color: #5b5959;">
+                    <label for="email">Masukan email anda disini...</label>
+                  </div>
+                  <div class="form-kontak form-floating my-3">
+                    <input type="text" name="text" id="text" class="form-control" placeholder="Pertanyaan Anda.."
+                      style="background-color: #C4C4C4; color: #5b5959;">
+                    <label for="text">Pertanyaan Anda..</label>
+                  </div>
+                  <div class="d-grid">
+                    <button type="button" class="btn btn-primary mb-3 fs-5 fw-medium"
+                      style="height: 54px;">Kirim</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="d-flex align-items-center justify-content-between">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 d-flex justify-content-center justify-content-md-start mb-2">
+            <img src="Assets/favicon.png" alt="Logo" width="30">
+            <a href="#" class="ms-2 text-decoration-none text-white fs-5 fw-bold">Rumah Idaman</a>
+          </div>
+          <div class="col-md-4 d-flex justify-content-evenly fw-bold" style="font-size: 1.125rem;">
+            <a href="#beranda" class="text-decoration-none text-white ms-0">Beranda</a>
+            <a href="#layanan" class="text-decoration-none text-white">Layanan</a>
+            <a href="#fitur" class="text-decoration-none text-white">Fitur</a>
+            <a href="#kontak" class="text-decoration-none text-white me-0">Kontak</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="container-fluid">
+    <div class="row" style="background-color: rgba(0, 0, 0, .9); ">
+      <div class="col-12 p-3">
+        <p class="text-white my-auto text-center copyright">Copyright &copy; 2023 by Gus Alitt | All Right Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
