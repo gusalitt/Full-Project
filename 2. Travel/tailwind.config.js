@@ -10,7 +10,6 @@ module.exports = {
       colors: {
         ungu: "#9333ea",
         pink: "#F85E9F",
-        // pink: "#9333ea",
         orange: "#FF5722",
         kuning: "#FACD49",
       },
