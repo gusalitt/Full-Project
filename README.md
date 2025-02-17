@@ -12,7 +12,7 @@ Repository untuk menyimpan berbagai Project
    - HTML
    - TailwindCSS
 
-3. [https://gus-alitt.github.io/Full-Project/3.%Laundry/index.html]
+3. [Demo](https://gusalitt.github.io/Full-Project/3.%Laundry/index.html)
    Web Laundry ini dibuat menggunakan :
    - HTML
    - CSS
