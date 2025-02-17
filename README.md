@@ -13,7 +13,6 @@ Repository untuk menyimpan berbagai Project
    - TailwindCSS
 
 3. [Demo](https://gusalitt.github.io/Full-Project/3.%20Laundry/index.html)
-   
    Web Laundry ini dibuat menggunakan :
    - HTML
    - CSS
