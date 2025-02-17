@@ -1,0 +1,33 @@
+.box {
+    opacity: 0;
+    transition: 0.8s;
+}
+.box[data-aos="fade-up"] {
+    transform: translateY(100px);
+}
+.box[data-aos="fade-down"] {
+    transform: translateY(-100px);
+}
+.box[data-aos="fade-left"] {
+    transform: translateX(100px);
+}
+.box[data-aos="fade-right"] {
+    transform: translateX(-100px);
+}
+
+.box.fade-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+.box.fade-down {
+    opacity: 1;
+    transform: translateY(0);
+}
+.box.fade-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+.box.fade-right {
+    opacity: 1;
+    transform: translateX(0);
+}

@@ -11,3 +11,11 @@ Repository untuk menyimpan berbagai Project
    Web Travel ini dibuat menggunakan :
    - HTML
    - TailwindCSS
+
+3. [https://gus-alitt.github.io/Full-Project/3.%Laundry/index.html]
+   Web Laundry ini dibuat menggunakan :
+   - HTML
+   - CSS
+   - JavaScript
+   - Smooth Scroll Master (Library)
+   - Typed JS (Library)

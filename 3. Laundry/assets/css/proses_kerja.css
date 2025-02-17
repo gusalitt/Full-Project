@@ -1,0 +1,35 @@
+section.proses-kerja {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 2rem;
+}
+.proses-kerja-img img {
+    border-radius: 10px;
+    width: 100%;
+}
+.proses-kerja-content {
+    width: 100%;
+}
+.proses-kerja-content .stages {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.stages li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.stages li h3 {
+    padding: .7rem .8rem;
+    border: 1.5px solid var(--main-color);
+    font-weight: 800;
+    border-radius: 10px;
+}
+.stages li:first-child h3 {
+    background-color: var(--main-color);
+    color: #fff;
+}

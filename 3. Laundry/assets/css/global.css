@@ -1,0 +1,140 @@
+:root {
+    --text-color: #000;
+    --secondary-color: #666;
+    --bg-color: #fff;
+    --card-color: #FAFAFA;
+    --main-color: #324EBC;
+    --shadow: 0 10px 15px -1px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+body.dark-theme {
+    --text-color: #e0e0e0;
+    --secondary-color: #b3b3b3;
+    --bg-color: #121212;
+    --card-color: #171923;
+    --main-color: #324EBC;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+}
+html, body {
+    overflow-x: hidden !important;
+}
+body {
+    background-color: var(--bg-color);
+}
+section {
+    padding-top: 10rem;
+    max-width: 1440px;
+    margin: auto;
+    width: 85% !important;
+}
+
+
+/* Texts */
+h2.title {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    letter-spacing: 1px;
+}
+.sub-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+p.text-content {
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+}
+
+
+/* Card */
+.card {
+    /* shadow-lg tailwindcss */
+    border: 1px solid transparent;
+    box-shadow: var(--shadow); 
+    width: 100%;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    transition: .2s;
+    position: relative;
+    margin: auto;
+}
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.card::before, .card::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    border-radius: 10px;
+    background-image: conic-gradient(from var(--angle), transparent 70%, var(--main-color));
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+    animation-delay: var(--delay, 0s);
+}
+.card::before {
+    filter: blur(1.5rem);
+    opacity: 0.4;
+}
+.card:hover {
+    border: 1px solid var(--main-color);
+}
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to { 
+        --angle: 360deg;
+    }
+}
+
+
+/* Buttons */
+.btn {
+    background-color: var(--main-color);
+    padding: .7rem 1.1rem;
+    color: #fff;
+    border-radius: 10px;
+    font-size: .9rem;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -10px var(--main-color), 0 4px 6px -4px var(--main-color);
+    width: fit-content;
+    border: 2px solid transparent;
+    transition: .2s;
+}
+.btn:hover {
+    background-color: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+
+/* More Info */
+.more-info {
+    color: var(--main-color);
+    letter-spacing: 1px;
+    transition: .2s;
+}
+.more-info:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+}

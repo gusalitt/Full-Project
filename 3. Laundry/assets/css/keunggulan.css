@@ -1,0 +1,30 @@
+section.keunggulan {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+section.keunggulan .keunggulan-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    place-items: center;
+    gap: 2rem;
+}
+.keunggulan-content .card {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.keunggulan-content .card h3 {
+    font-size: 1.4rem;
+    margin-bottom: -.5rem;
+}
+.keunggulan-content .card img {
+    width: 60px;
+}
+.keunggulan-content .card i {
+    font-size: 2.2rem;
+    color: var(--text-color);
+}

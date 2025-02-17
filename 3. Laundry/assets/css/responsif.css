@@ -1,0 +1,167 @@
+@media (max-width: 1024px) {
+	section {
+		text-align: center;
+	}
+
+	/* Navbar */
+	nav .hamburger {
+		display: block;
+		cursor: pointer;
+	}
+
+	nav {
+		position: fixed;
+		padding: 0.5rem 0;
+	}
+	nav ul {
+		display: block;
+		position: absolute;
+		top: 48px;
+		left: 0;
+		width: 60%;
+		min-height: 100vh;
+		height: 100% !important;
+		max-height: 100vh;
+		border-radius: 0;
+		padding-left: 2.5rem;
+		transform: translateX(-100%);
+		opacity: 0;
+		background-color: var(--bg-color);
+	}
+	nav ul .toggle-theme {
+		margin-left: 1.5rem;
+	}
+
+	/* Header */
+	section.home {
+		grid-template-columns: repeat(1, 1fr);
+		place-items: center;
+	}
+	.home h1 {
+		font-size: 2rem;
+	}
+	.home .home-content {
+		text-align: center;
+		grid-row-start: 2;
+		justify-content: center;
+		align-items: center;
+	}
+	.home .btn {
+		width: fit-content;
+		padding: 1rem 2rem;
+	}
+	.home-img {
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.home-img img {
+		width: 80%;
+	}
+
+	/* About */
+	section.tentang-kami {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 0;
+	}
+	.tentang-kami .about-img {
+		transform: scale(0.8);
+	}
+	.tentang-kami .about-content {
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* Layanan Kami */
+	section.layanan-kami {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.layanan-title {
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* Testimoni */
+	section.testimoni .carousel-box .card {
+		min-width: 50%;
+	}
+
+	/* Kontak */
+	section.kontak {
+		flex-direction: column;
+		text-align: left;
+	}
+	.kontak-content {
+		width: 100%;
+	}
+	.kontak .card,
+	.kontak form {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+    section {
+        gap: 1.5rem !important;
+        width: 85% !important;
+    }
+	
+	.card::before, .card::after {
+		animation: none !important;
+		display: none;
+	}
+
+    nav ul {
+        padding-left: 1rem;
+    }
+
+    /* Header */
+    .home {
+        padding-top: 6rem;
+    }
+	.home .btn {
+		font-size: 1.1rem;
+	}
+	.home-img img {
+		width: 100%;
+	}
+
+    /* About */
+	.tentang-kami .about-img {
+		transform: scale(1);
+	}
+    
+	/* Layanan Kami */
+    .layanan-content {
+        grid-template-columns: repeat(1, 1fr) !important;
+        width: 100%;
+    }
+
+    /* Proses Kerja */
+    section.proses-kerja {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Testimoni */
+    section.testimoni .carousel-box .card {
+		min-width: 100%;
+	}
+	.carousel .next {
+		right: -1.5rem;
+	}
+	.carousel .prev {
+		left: -1.5rem;
+	}
+
+    /* Kontak */
+    .customer-support {
+        flex-direction: column;
+    }
+
+    /* Footer */
+    footer ul.footer-content {
+        grid-template-columns: repeat(1, 1fr);
+		text-align: center;
+    }
+}

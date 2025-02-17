@@ -1,0 +1,75 @@
+section.kontak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.kontak-content {
+    width: 60%;
+}
+.kontak-content,
+.kontak-info,
+.kontak form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+.kontak-content .title {
+    font-size: 1.4rem;
+    /* color: var(--text-color); */
+}
+.kontak-info {
+    gap: .5rem;
+}
+.customer-support {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.customer-support h3 {
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
+}
+.kontak .card {
+    width: 40%;
+}
+.kontak .card:hover {
+    border: 1px solid transparent;
+}
+.kontak form {
+    font-size: 1.2rem;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+    gap: 1.5rem;
+    background-color: var(--card-color);
+    box-shadow: var(--shadow);
+}
+.kontak .form-group {
+    width: 100%;
+}
+.form-group label {
+    margin-bottom: .6rem;
+    font-size: 1.2rem;
+    display: block;
+}
+.kontak form input,
+.kontak form textarea {
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    border: 1px solid #666;
+    border-radius: 15px;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    background-color: var(--card-color);
+}
+.form-group textarea {
+    resize: vertical;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    border: 1px solid var(--main-color);
+}

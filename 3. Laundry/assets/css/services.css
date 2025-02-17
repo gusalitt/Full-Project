@@ -1,0 +1,34 @@
+section.layanan-kami {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.layanan-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .8rem;
+}
+.layanan-title .sub-title {
+    margin-top: -.8rem;
+}
+section.layanan-kami .layanan-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem;
+}
+.layanan-content .card {
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+.layanan-content .card i {
+    color: var(--main-color);
+    font-size: 1.6rem;
+}
