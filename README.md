@@ -12,10 +12,11 @@ Repository untuk menyimpan berbagai Project
    - HTML
    - TailwindCSS
 
-3. [Demo](https://gusalitt.github.io/Full-Project/3.%20Laundry/index.html)
+3. [Demo](https://gusalitt.github.io/Full-Project/3.%20Laundry/index.html)                                                                                                 
    Web Laundry ini dibuat menggunakan :
    - HTML
    - CSS
    - JavaScript
    - Smooth Scroll Master (Library)
    - Typed JS (Library)
+   
