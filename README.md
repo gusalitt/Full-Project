@@ -24,4 +24,16 @@ Repository untuk menyimpan berbagai Project
    - JavaScript
    - Smooth Scroll Master (Library)
    - Typed JS (Library)
+
+5. [Demo](https://gusalitt.github.io/Full-Project/5_Konsultasi_Dokter_1/index.html)                                                                                                 
+   Web Konsultasi_Dokter_1 ini dibuat menggunakan :
+   - HTML
+   - CSS
+   - JavaScript
+
+6. [Demo](https://gusalitt.github.io/Full-Project/6_Konsultasi_Dokter_2/index.html)                                                                                                 
+   Web Konsultasi_Dokter_2 ini dibuat menggunakan :
+   - HTML
+   - CSS
+   - JavaScript
    
