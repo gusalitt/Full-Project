@@ -1,0 +1,176 @@
+.container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5rem 4rem;
+}
+.fcol, .frow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.fcol {
+    flex-direction: column;
+}
+.start {
+    justify-content: start;
+    align-items: start;
+}
+.center {
+    align-items: center !important;
+    justify-content: center !important;
+}
+.gap-10 {
+    gap: 15px !important;
+}
+.gap-0 {
+    gap: 0px !important;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center !important;
+    gap: 1.5rem;
+    width: 100%;
+}
+[class*="col-"] {
+    padding: 1rem;
+    width: 100%;
+    margin: auto;
+}
+
+.col-1 { grid-column: span 1; } 
+.col-2 { grid-column: span 2; } 
+.col-3 { grid-column: span 3; } 
+.col-4 { grid-column: span 4; } 
+.col-5 { grid-column: span 5; } 
+.col-6 { grid-column: span 6; } 
+.col-7 { grid-column: span 7; } 
+.col-8 { grid-column: span 8; } 
+.col-9 { grid-column: span 9; } 
+.col-10 { grid-column: span 10; } 
+.col-11 { grid-column: span 11; } 
+.col-12 { grid-column: span 12; }
+
+@media screen and (max-width: 1024px) {
+    .col-md-1 { grid-column: span 1; } 
+    .col-md-2 { grid-column: span 2; } 
+    .col-md-3 { grid-column: span 3; } 
+    .col-md-4 { grid-column: span 4; } 
+    .col-md-5 { grid-column: span 5; } 
+    .col-md-6 { grid-column: span 6; } 
+    .col-md-7 { grid-column: span 7; } 
+    .col-md-8 { grid-column: span 8; } 
+    .col-md-9 { grid-column: span 9; } 
+    .col-md-10 { grid-column: span 10; } 
+    .col-md-11 { grid-column: span 11; } 
+    .col-md-12 { grid-column: span 12; }
+
+    .content {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        padding: 5rem 3rem;
+    }
+
+    .dekstop {
+        display: none;
+    }
+    .menu, .mobile {
+        display: block !important;
+    }
+    .mobile {
+        position: fixed;
+        top: 52px;
+        background-color: #fff;
+        left: 0;
+        width: 80%;
+        height: 100vh;
+        min-height: 100vh;
+        padding-left: 2rem;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    .mobile :has(li, a) {
+        width: 100%;
+    }
+    .mobile .nav-act {
+        padding-inline: 1rem;
+    }
+
+    .home .w-60, .home .w-80 {
+        width: 100% !important;
+    }
+    .home .card {
+        text-align: center;
+        flex-direction: column;
+    }
+    .home .card .fcol {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .home .text {
+        text-align: center;
+    }
+
+    .konsultasi-img {
+        width: 100%;
+        margin-left: 0;
+        box-shadow: 25px 25px 0px var(--main);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    [class*="col-"] {
+        grid-column: span 12;
+    }
+
+    .col-sm-3 { grid-column: span 3; } 
+    .col-sm-6 { grid-column: span 6; } 
+    .col-sm-9 { grid-column: span 9; } 
+
+    .container {
+        padding: 4rem 1.5rem;
+    }
+    .nav .container {
+        padding: 5px 1.5rem;
+    }
+
+    .home .card {
+        text-align: start;
+        flex-direction: row;
+    }
+    .home .card .fcol {
+        justify-content: start;
+        align-items: start;
+        text-align: left;
+    }
+    .home .card .text {
+        text-align: left;
+    }
+
+    .hero .col-12:first-child {
+        padding: 0 !important;
+    }
+    .darurat .w-80 {
+        width: 100%;
+    }
+
+    .layanan .card {
+        min-width: 60%;
+    }
+    .panduan img {
+        height: 70%;
+    }
+    .feed .card {
+        min-width: 80%;
+    }
+}

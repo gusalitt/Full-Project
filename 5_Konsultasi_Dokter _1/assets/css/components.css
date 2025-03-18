@@ -1,0 +1,62 @@
+/* Buttons */
+.btn {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: .7rem 1.2rem;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    width: fit-content;
+    text-align: center;
+}
+.btn:hover {
+    border: 1px solid var(--main-color);
+    background-color: #0e8dc3;
+}
+.btn-transparent {
+    background-color: transparent !important;
+    border: 1px solid var(--main-color) !important;
+    color: #000;
+}
+.btn-transparent:hover {
+    background-color: var(--main-color) !important;
+    color: #fff;
+}
+
+/* Texts */
+.title  {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: var(--main-color);
+}
+.subtitle {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.paragraph {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+
+/* Card  */
+.card {
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    padding: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    border: 1px solid transparent;
+}
+.card .paragraph {
+    font-size: .9rem;
+}
+.card:hover {
+    border: 1px solid var(--main-color);
+}

@@ -1,0 +1,93 @@
+/* Texts */
+.title {
+    font-size: 1.8rem;
+    letter-spacing: .5px;
+}
+.sub1 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: var(--main);
+    font-weight: 600;
+}
+.sub2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.text {
+    color: #656565;
+    font-size: .95rem;
+}
+
+
+/* Buttons */
+.btn {
+    border-radius: 20px;
+    color: #fff;
+    background-color: var(--main);
+    box-shadow: var(--shadow);
+    padding: .6rem 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-soft {
+    background-color: #80bbff !important;
+    color: #000 !important;
+}
+
+
+/* Card */
+.card {
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    border: 2px solid transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.card:hover {
+    border: 2px solid var(--main);
+    transform: translateY(-5px);
+}
+.scroll-hidden {
+    scrollbar-width: none;
+    overflow: auto;
+    padding: 1rem 5px;
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+/* Width */
+[class*="w-"] {
+    text-align: center;
+    margin: auto;
+}
+.w-60 { width: 60%; }
+.w-80 { width: 80%; }
+.w-100 { width: 100%; }
+
+mark {
+    background-color: transparent;
+    color: var(--main);
+}
+mark.brand {
+    color: var(--main);
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: transparent;
+}
+.text mark {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+.mt-1 {
+    margin-top: 10px !important;
+}

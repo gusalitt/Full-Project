@@ -1,0 +1,43 @@
+:root {
+    --text: #1d355f;
+    --main: #0077ff;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+}
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    color: var(--text);
+    transition: .3s;
+    list-style: none;
+    text-decoration: none;
+}
+html, body {
+    overflow-x: hidden !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.rounded {
+    border-radius: 20px;
+}
+img {
+    width: 100%;
+}
+img.w50 {
+    width: 50px;
+}
+img.w30 {
+    width: 30px;
+}
+img.w20 {
+    width: 20px;
+}

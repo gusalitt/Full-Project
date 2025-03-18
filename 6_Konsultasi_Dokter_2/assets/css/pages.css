@@ -1,0 +1,186 @@
+.nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99999;
+}
+.nav .container {
+    justify-content: space-between !important;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.nav li a {
+    display: block;
+    padding: 1.1rem;
+}
+.nav li a:hover {
+    color: var(--main);
+}
+.nav .menu, .nav .mobile {
+    display: none;
+}
+.menu {
+    cursor: pointer;
+}
+.nav .mobile.show {
+    transform: translateX(0);
+    opacity: 1;
+} 
+
+/* home */
+.home .container {
+    padding-top: 6rem;
+}
+.home .title {
+    font-size: 2.8rem;
+}
+.home .input-box {
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border-radius: 30px;
+    padding-right: 5px;
+    border: 1px solid #f0f0f0;
+}
+.home input {
+    width: 100%;
+    height: 100%;
+}
+.home form .btn {
+    width: 100%;
+    height: 80%;
+}
+.home .text {
+    text-align: left;
+}
+.home .card .sub2 {
+    font-weight: 700;
+}
+
+/* hero */
+.hero .container {
+    padding-top: 2rem !important;
+}
+.hero img {
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* layanan */
+.layanan .card {
+    min-width: 30%;
+}
+.layanan .card :where(*) {text-align: center;}
+
+/* darurat */
+.darurat .row {
+    background-color: var(--main);
+    border-radius: 20px;
+    padding: 1.2rem;
+}
+.darurat .row :where(*) {
+    color: #fff !important;
+}
+.darurat .btn {
+    background-color: #fff;
+    color: #000 !important;
+}
+
+/* konsultasi */
+.konsultasi .sub2 {
+    font-size: 1rem;
+}
+.konsultasi-img {
+    width: 90%;
+    margin-left: 2rem;
+    border-radius: 20px;
+    box-shadow: 25px -25px 0px var(--main);
+    aspect-ratio: 16 / 10;
+}
+
+/* panduan */
+.panduan img {
+    border-radius: 20px;
+    aspect-ratio: 16 / 7;
+}
+.panduan .row, .panduan .circle {
+    position: relative;
+}
+.panduan .row::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--main);
+    border-radius: 20px;
+    width: 3px;
+    height: 100%;
+}
+.panduan .circle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+}
+.panduan .col-6 {
+    width: 100%;
+    height: 100%;
+}
+.panduan .col-6:nth-child(even) {
+    text-align: left;
+    align-items: start;
+}
+.panduan .col-6:nth-child(odd) {
+    text-align: right;
+    align-items: end;
+}
+.panduan .sub2 {
+    font-weight: 700;
+}
+
+/* dokter */
+.dokter img {
+    border-radius: 20px;
+}
+
+/* feed */
+.feed .card {
+    min-width: 45%;
+}
+
+footer .container {
+    padding-bottom: 0;
+}
+footer [class*="col-"] {
+    height: 100%;
+}
+footer .sub2 {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+footer .col-12 {
+    border-top: 1px solid #e0e0e0;
+}
+footer li a:hover {
+    color: var(--main);
+    text-decoration: underline;
+}
+
+.emergency {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 50px;
+}
+.emergency img {
+    width: 110px;
+}

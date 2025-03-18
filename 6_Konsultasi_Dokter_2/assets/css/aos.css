@@ -1,0 +1,24 @@
+.aos {
+    opacity: 0;
+    transition: 1s;
+}
+.aos[data-aos="fade-up"] {
+    transform: translateY(60%);
+}
+.aos[data-aos="fade-down"] {
+    transform: translateY(-60%);
+}
+.aos[data-aos="fade-left"] {
+    transform: translateX(60%);
+}
+.aos[data-aos="fade-right"] {
+    transform: translateX(-60%);
+}
+.aos.fade-up, .aos.fade-down {
+    opacity: 1;
+    transform: translateY(0);
+}
+.aos.fade-left, .aos.fade-right {
+    opacity: 1;
+    transform: translateX(0);
+}
